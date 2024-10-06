@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TabWrangler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>TabWrangler</h2>
+
+    <p>Current Open Tabs: <span id="tab-count">0</span></p>
+    <p>Unloaded Tabs: <span id="unloaded-tab-count">0</span></p>
+
+    <!-- Features -->
+    <h3>Features</h3>
+    <label>
+      <input type="checkbox" id="auto-close-empty" /> Close Empty Tabs After 2
+      Minutes
+    </label>
+    <br />
+    <label> <input type="checkbox" id="mark-empty" /> Mark Empty Tabs </label>
+    <br />
+    <label>
+      <input type="checkbox" id="close-new-tabs" /> Close New Unused Tabs After
+      2 Minutes
+    </label>
+
+    <!-- Buttons -->
+    <button id="close-all-tabs">Close All Tabs After 2 Minutes</button>
+    <button id="apply">Apply</button>
+
+    <!-- Script -->
+    <script src="popup.js"></script>
+  </body>
+</html>
